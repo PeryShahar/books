@@ -1,0 +1,63 @@
+[
+  {
+    "bookId": 1,
+    "title": "Atlas Shrugged",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51EPNWNaNnL._AC_UL320_.jpg"
+  },
+  {
+    "bookId": 2,
+    "title": "The Fountainhead",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/91BJxtOQS0L._AC_UL320_.jpg"
+  },
+  {
+    "bookId": 3,
+    "title": "Antifragile: Things That Gain from Disorder",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81eUw-Icm4L._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 4,
+    "title": "Reveries of the Solitary Walker",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71rZrdwTx-L._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 5,
+    "title": "Born to Run",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51FQN9C9ViL._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 6,
+    "title": "Homo Deus: A Brief History of Tomorrow",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81mpU5GWymL._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 7,
+    "title": "Around the World in Eighty Days",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/613rB9eb0TL._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 8,
+    "title": "Moby-Dick",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81HBvFY7sjL._AC_UL320_.jpg"
+  },
+  {
+    "bookId": 9,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81j4LPfjVWL._AC_UY218_.jpg"
+  },
+
+  {
+    "bookId": 10,
+    "title": "Catch-22",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51lPwHudz0L._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 11,
+    "title": "Initiation",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51CRSPVH0VL._AC_UY218_.jpg"
+  },
+  {
+    "bookId": 12,
+    "title": "The Catcher in the Rye",
+    "url": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71nXPGovoTL._AC_UY218_.jpg"
+  }
+]
