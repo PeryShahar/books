@@ -13,10 +13,10 @@ const MyBooks: React.FC = () => {
 
   useEffect(() => {
     getAllBooks();
-  }, [books]);
+  }, []);
 
   const handleRemoveFromMyBooks = async (bookId: number) => {
-    axios.delete(`/mybooks/${bookId}`);
+    axios.delete(`/mybooks/${bookId}`).then(() => getAllBooks());
   };
   console.log(books);
   return (
