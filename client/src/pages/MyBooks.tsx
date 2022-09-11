@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { book } from "../types/book.interface";
+import ThemeContext from "../theme/theme-context";
 
-const AllBooks: React.FC = () => {
+const MyBooks: React.FC = () => {
   const [books, setBooks] = useState<book[]>([]);
+  const themes = useContext(ThemeContext);
 
   const getAllBooks = async () => {
-    const { data } = await axios.get("http://localhost:3002/allbooks");
+    const { data } = await axios.get("http://localhost:3002/mybooks");
     setBooks(data);
   };
 
@@ -14,16 +16,12 @@ const AllBooks: React.FC = () => {
     getAllBooks();
   }, []);
 
-  const AddToMyBooks = async (bookId: number, title: string, url: string) => {
-    axios.post("/mybooks", {
-      bookId,
-      title,
-      url,
-    });
+  const handleRemoveFromMyBooks = async (bookId: number) => {
+    axios.delete(`/mybooks/${bookId}`).then(() => getAllBooks());
   };
-
+  console.log(books);
   return (
-    <main>
+    <main style={themes}>
       {books.map((book, index) => {
         return (
           <div className="book-box" key={index}>
@@ -36,10 +34,10 @@ const AllBooks: React.FC = () => {
             </div>
             <div>
               <button
-                onClick={() => AddToMyBooks(book.bookId, book.title, book.url)}
+                onClick={() => handleRemoveFromMyBooks(book.bookId)}
                 className="btn-add"
               >
-                Add to My Books
+                Remove from My Books
               </button>
             </div>
           </div>
@@ -49,4 +47,4 @@ const AllBooks: React.FC = () => {
   );
 };
 
-export default AllBooks;
+export default MyBooks;

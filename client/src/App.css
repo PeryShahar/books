@@ -88,7 +88,7 @@ img {
   width: 100px;
 }
 
-.btn-add {
+.btn-add,.btn-theme {
   background-color: #ea4c89;
   border-radius: 8px;
   border-style: none;
